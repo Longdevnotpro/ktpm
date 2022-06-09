@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lí linh kiện</title>
+    <title>Quản lí nhân viên</title>
     <link rel="stylesheet" href="../asset/css/trangchu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
     ">
     <link rel="stylesheet" href="../asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="../asset/css/base.css">
-    <link rel="stylesheet" href="../asset/css/qllinhkien.css">
+    <link rel="stylesheet" href="../asset/css/quanlinhanvien.css">
+    <link rel="stylesheet" href="../asset/css/base-information.css">
+    
 </head>
 
 <body>
     <div class="wrapper">
         <div class="header">
             <div class="header__welcome">
-                <h1 class="header__welcome-welcome">Xin chào, Nhân viên</h1>
+                <h1 class="header__welcome-welcome">Xin chào, Admin</h1>
                 <a href="" class="header__welcome-signout">Đăng xuất</a>
             </div>
             <div class="header__navbar">
@@ -43,13 +45,14 @@
 
                 <span class="category-pos">DANH MỤC QUẢN LÍ</span>
                 <ul class="category-list">
-                    <li class="category-item "><a href="" class="category-item-link">TRANG CHỦ</a></li>
-                    <li class="category-item category-item-active"><a href="" class="category-item-link">QUẢN LÍ LINK
-                            KIỆN</a></li>
+                    <li class="category-item"><a href="" class="category-item-link">TRANG CHỦ</a></li>
+                    <li class="category-item"><a href="" class="category-item-link">QUẢN LÍ LINK KIỆN</a></li>
                     <li class="category-item"><a href="" class="category-item-link">QUẢN LÍ ĐƠN NHẬP HÀNG</a></li>
                     <li class="category-item"><a href="" class="category-item-link">QUẢN LÍ ĐƠN BÁN HÀNG</a></li>
                     <li class="category-item"><a href="" class="category-item-link">QUẢN LÍ KHÁCH HÀNG</a></li>
                     <li class="category-item"><a href="" class="category-item-link">QUẢN LÍ NHÀ CUNG CẤP</a></li>
+                    <li class="category-item category-item-active"><a href="" class="category-item-link">QUẢN LÍ NHÂN
+                            VIÊN</a></li>
                     <li class="category-item"><a href="" class="category-item-link">DANH SÁCH HIỂN THỊ</a></li>
 
                 </ul>
@@ -58,34 +61,28 @@
             <!-- content-information -->
             <div class="wrap-information">
                 <div class="accessories">
-                    <span class="accessories-tittle">QUẢN LÍ LINH KIỆN</span>
+                    <span class="accessories-tittle">QUẢN LÍ NHÂN VIÊN</span>
                 </div>
-                <div class="accessories-search">
-                    <input type="text" class="accessories-input-text" placeholder="Nhập tên linh kiện muốn tìm">
-                    <button class="header__navbar-search-button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div>
-                <span class="information-accessories">Thông tin linh kiện</span>
-
+                <span class="information-accessories">Thông tin nhân viên</span>
                 <div class="accessories-box">
+                    <img src="../asset/img/icon-person.png" alt="" class="person-icon">
                     <div class="accessories-col1">
                         <ul class="col1-list">
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Mã LK:</span>
+                                    <span class="code-label">Mã NV:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Tên LK:</span>
+                                    <span class="code-label">Tên NV:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Ngày nhập hàng:</span>
+                                    <span class="code-label">Ngày sinh:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
@@ -97,19 +94,19 @@
                         <ul class="col1-list">
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Loại LK:</span>
+                                    <span class="code-label">Email:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Số lượng:</span>
+                                    <span class="code-label">Số điện thoại:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Đơn giá:</span>
+                                    <span class="code-label">Địa chỉ:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
@@ -161,4 +158,5 @@
         </div>
     </div>
 </footer>
+
 </html>
