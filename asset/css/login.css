@@ -69,11 +69,9 @@ border-color: #54a0ff;
     font-size: 15px;
 }
 
-.eye{
-    right: -50px;
-    
+.eye:hover{
+    cursor: pointer;
 }
-
 .form__contact{
     font-size: 15px;
     color:#fff;
