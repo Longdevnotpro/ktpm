@@ -13,14 +13,10 @@ body{
     display: flex;
 }
 
-.content-header{
-
-}
-
 .content-0{
     position: relative;
     top: 70px;
-    background-color: #3EC5F6;
+    background-color: #c0c0c0;
     font-size: 35px;
     padding: 20px;
     left: 100px;
@@ -49,11 +45,12 @@ body{
 .content-header-2{
     position: relative;
     display: inline;
-    background-color: #3EC5F6;
+    background-color: #c0c0c0;
     padding: 10px;
     font-size: 20px;
     top: 300px;
     left: 300px;
+    font-weight: 600;
 }
 
 .content-header-3{
@@ -63,13 +60,12 @@ body{
     font-size: 20px;
     top: 384px;
     left: 0px;
-    background-color: #3EC5F6;
+    
     
 }
 
-.content-header-4 span{
-    font-size: 25px;
-    display: flex;
+.outstanding-guest{
+    
 }
 
 .content-header-4 img{

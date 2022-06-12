@@ -27,6 +27,7 @@ body {
 .header__welcome-welcome {
     font-size: 20px;
     font-weight: 400;
+    margin-left: 10px;
 }
 
 .header__welcome-signout {
@@ -35,7 +36,12 @@ body {
     padding-top: 13.4px;
     text-decoration: none;
     color: black;
+    font-weight: 600;
 
+}
+
+.header__welcome-signout:hover{
+    color: red;
 }
 
 .header__navbar {
@@ -152,8 +158,9 @@ body {
 }
 
 .category-item-link {
-       color: black;
+    color: black;
     text-decoration: none;
+    display: block;
     
 }
 
