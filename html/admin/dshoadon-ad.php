@@ -18,7 +18,7 @@
         <div class="header">
             <div class="header__welcome">
                 <h1 class="header__welcome-welcome">Xin chào, Admin</h1>
-                <a href="" class="header__welcome-signout">Đăng xuất</a>
+                <a href="../nv/login.php" class="header__welcome-signout">Đăng xuất</a>
             </div>
             <div class="header__navbar">
                 <div class="header__navbar-logo">

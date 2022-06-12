@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lí khách hàng</title>
+    <title>Quản lí linh kiện</title>
+    <link rel="stylesheet" href="../asset/css/trangchu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
     ">
     <link rel="stylesheet" href="../../asset/font/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="../../asset/css/base.css">
-    <link rel="stylesheet" href="../../asset/css/base-information.css">
-    
+    <link rel="stylesheet" href="../../asset/css/qllinhkien.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="header">
             <div class="header__welcome">
                 <h1 class="header__welcome-welcome">Xin chào, Admin</h1>
-                <a href="../login.html" class="header__welcome-signout">Đăng xuất</a>
+                <a href="../nv/login.php" class="header__welcome-signout">Đăng xuất</a>
             </div>
             <div class="header__navbar">
                 <div class="header__navbar-logo">
@@ -43,15 +43,15 @@
 
                 <span class="category-pos">DANH MỤC QUẢN LÍ</span>
                 <ul class="category-list">
-                    <li class="category-item "><a href="./trangchuadmin.html" class="category-item-link">TRANG CHỦ</a>
+                    <li class="category-item "><a href="./trangchuadmin.php" class="category-item-link">TRANG CHỦ</a>
                     </li>
-                    <li class="category-item"><a href="./qllinhkien-ad.html" class="category-item-link">QUẢN LÍ LINH KIỆN</a></li>
-                    <li class="category-item"><a href="./quanlidonnhap-ad.html" class="category-item-link">QUẢN LÍ ĐƠN NHẬP HÀNG</a></li>
-                    <li class="category-item"><a href="./qldonban-ad.html" class="category-item-link">QUẢN LÍ ĐƠN BÁN HÀNG</a></li>
-                    <li class="category-item category-item-active"><a href="./qlkhachhang-ad.html" class="category-item-link">QUẢN LÍ KHÁCH HÀNG</a></li>
-                    <li class="category-item "><a href="./quanlincc-ad.html" class="category-item-link">QUẢN LÍ NHÀ CUNG CẤP</a></li>
-                    <li class="category-item"><a href="./quanlinhanvien.html" class="category-item-link">QUẢN LÍ NHÂN VIÊN</a></li>
-                    <li class="category-item"><a href="./danhsach-ad.html" class="category-item-link">DANH SÁCH HIỂN THỊ</a></li>
+                    <li class="category-item category-item-active"><a href="./qllinhkien-ad.php" class="category-item-link">QUẢN LÍ LINH KIỆN</a></li>
+                    <li class="category-item"><a href="./quanlidonnhap-ad.php" class="category-item-link">QUẢN LÍ ĐƠN NHẬP HÀNG</a></li>
+                    <li class="category-item"><a href="./qldonban-ad.php" class="category-item-link">QUẢN LÍ ĐƠN BÁN HÀNG</a></li>
+                    <li class="category-item"><a href="./qlkhachhang-ad.php" class="category-item-link">QUẢN LÍ KHÁCH HÀNG</a></li>
+                    <li class="category-item"><a href="./quanlincc-ad.php" class="category-item-link">QUẢN LÍ NHÀ CUNG CẤP</a></li>
+                    <li class="category-item"><a href="./quanlinhanvien.php" class="category-item-link">QUẢN LÍ NHÂN VIÊN</a></li>
+                    <li class="category-item"><a href="./danhsach-ad.php" class="category-item-link">DANH SÁCH HIỂN THỊ</a></li>
 
                 </ul>
             </nav>
@@ -59,28 +59,34 @@
             <!-- content-information -->
             <div class="wrap-information">
                 <div class="accessories">
-                    <span class="accessories-tittle">QUẢN LÍ KHÁCH HÀNG</span>
+                    <span class="accessories-tittle">QUẢN LÍ LINH KIỆN</span>
                 </div>
-                <span class="information-accessories">Thông tin khách hàng</span>
+                <div class="accessories-search">
+                    <input type="text" class="accessories-input-text" placeholder="Nhập tên linh kiện muốn tìm">
+                    <button class="header__navbar-search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <span class="information-accessories">Thông tin linh kiện</span>
+
                 <div class="accessories-box">
-                    
                     <div class="accessories-col1">
                         <ul class="col1-list">
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Mã KH:</span>
+                                    <span class="code-label">Mã LK:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Tên khách hàng:</span>
+                                    <span class="code-label">Tên LK:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Giới tính:</span>
+                                    <span class="code-label">Ngày nhập hàng:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
@@ -92,22 +98,23 @@
                         <ul class="col1-list">
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Ngày đăng kí thành viên:</span>
+                                    <span class="code-label">Loại LK:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Số điện thoại:</span>
+                                    <span class="code-label">Số lượng:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
                             <li class="col1-item">
                                 <div class="accessories-code">
-                                    <span class="code-label">Địa chỉ:</span>
+                                    <span class="code-label">Đơn giá:</span>
                                     <input type="text" class="col1-item-input">
                                 </div>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -155,5 +162,4 @@
         </div>
     </div>
 </footer>
-
 </html>
