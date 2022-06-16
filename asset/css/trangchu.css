@@ -3,72 +3,8 @@ body{
 }
 
 .information{
-    background-image: url(../img/2.png);
+    background-image: url(../img/anhtrang.png);
     flex: 1;
     margin-right: 40px;
     border: 2px solid black;
-}
-
-.header-title{
-    display: flex;
-}
-
-.content-0{
-    position: relative;
-    top: 70px;
-    background-color: #c0c0c0;
-    font-size: 35px;
-    padding: 20px;
-    left: 100px;
-    
-}
-
-.content-1{
-    margin-left: 10%;
-}
-
-.content-2{
-    position: absolute;
-    top: 290px;
-    margin-left: 20%;
-    left: 550px;
-}
-
-.content-3{
-    position:absolute;
-    margin-left: 30%;
-    top: 343px;
-    left: 500px;
-
-}
-
-.content-header-2{
-    position: relative;
-    display: inline;
-    background-color: #c0c0c0;
-    padding: 10px;
-    font-size: 20px;
-    top: 300px;
-    left: 300px;
-    font-weight: 600;
-}
-
-.content-header-3{
-    position: relative;
-    display: flex;
-    padding: 10px;
-    font-size: 20px;
-    top: 384px;
-    left: 0px;
-    
-    
-}
-
-.outstanding-guest{
-    
-}
-
-.content-header-4 img{
-    height: 100px;
-    margin-right: 20px;
 }
